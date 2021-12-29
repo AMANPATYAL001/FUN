@@ -92,7 +92,6 @@ body {
     transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
 
-  
 
 .bg {
 animation:slide 3s ease-in-out infinite alternate;
@@ -124,9 +123,6 @@ animation-duration:5s;
 }
 }
 
-/* body {
-    perspective: 1000px;
-  } */
 #spinner {
 font-size: 50px;
 text-align: center;
@@ -137,6 +133,7 @@ animation-duration: 5s;
 transform-style: preserve-3d;
 position: relative;
 }
+
 #spinner::before,
 #spinner::after {
 content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -";
