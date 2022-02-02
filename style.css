@@ -13,10 +13,10 @@ html {
     height:100%;
 }
 
-.grid-item:hover{
+/* .grid-item:hover{
     border: 4px solid whitesmoke;
     
-}
+} */
 
 body {
     height: 100vh;

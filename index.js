@@ -29,8 +29,19 @@ $grid.find('.grid-item').each( function( i, gridItem ) {
   var draggie = new Draggabilly( gridItem );
   draggies.push( draggie );
   // bind drag events to Packery
-  $grid.packery( 'bindDraggabillyEvents', draggie );
+  $grid.packery('bindDraggabillyEvents', draggie );
 });
+
+gridItemList=document.getElementsByClassName('grid-item')
+
+var hoverBorder = function() {
+  color="#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
+  this.style.border=`5px solid ${color}` ;
+};
+
+for (var i = 0; i < gridItemList.length; i++) {
+  gridItemList[i].addEventListener('mouseover', hoverBorder, false);
+}
 
 var $grid = $('.grid').packery({
 
